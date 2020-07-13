@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h3>Formulário</h3>
+        <form class="form" action="form.php" method="POST">
+            <div class="form-group">
+                <input class="form-control" type="text" name="nome" placeholder="Nome">
+            </div>
+            <div class="form-group">
+                <input class="form-control" type="password" name="senha" placeholder="Senha">
+            </div>
+            <div class="form-group">
+                <input class="form-control" type="email" name="email" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <label>
+                    <input type="checkbox" name="concordo" value="SIM">
+                    Concordo
+                </label>
+            </div>
+            <div class="form-group">
+                <label>
+                    <input type="radio" name="sexo" value="F">Feminino
+                </label>
+            </div>
+            <div class="form-group">
+                <label>
+                    <input type="radio" name="sexo" value="M">Masculino
+                </label>
+            </div>
+            <div class="form-group">
+                <select class="form-control" name="estado">
+                    <option value="">Escolha o estado</option>
+                    <option value="BA">Bahia</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="SE">Sergipe</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <textarea class="form-control" name="descricao" placeholder="Descrição" cols="30" rows="10"></textarea>
+            </div>
+            <button class="btn btn-success" type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+
+</html>
